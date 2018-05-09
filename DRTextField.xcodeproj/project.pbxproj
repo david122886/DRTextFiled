@@ -15,6 +15,7 @@
 		5A6A10A520A19AA300FC342A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A10A420A19AA300FC342A /* main.m */; };
 		5A6A10AF20A19AA400FC342A /* DRTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A10AE20A19AA400FC342A /* DRTextFieldTests.m */; };
 		5A6A10BA20A19AA400FC342A /* DRTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A10B920A19AA400FC342A /* DRTextFieldUITests.m */; };
+		5A6A10C920A19B1600FC342A /* DRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A10C820A19B1600FC342A /* DRTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5A6A10B520A19AA400FC342A /* DRTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6A10B920A19AA400FC342A /* DRTextFieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRTextFieldUITests.m; sourceTree = "<group>"; };
 		5A6A10BB20A19AA400FC342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6A10C720A19B1600FC342A /* DRTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRTextField.h; sourceTree = "<group>"; };
+		5A6A10C820A19B1600FC342A /* DRTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				5A6A109620A19AA300FC342A /* AppDelegate.m */,
 				5A6A109820A19AA300FC342A /* ViewController.h */,
 				5A6A109920A19AA300FC342A /* ViewController.m */,
+				5A6A10C720A19B1600FC342A /* DRTextField.h */,
+				5A6A10C820A19B1600FC342A /* DRTextField.m */,
 				5A6A109B20A19AA300FC342A /* Main.storyboard */,
 				5A6A109E20A19AA300FC342A /* Assets.xcassets */,
 				5A6A10A020A19AA300FC342A /* LaunchScreen.storyboard */,
@@ -199,7 +204,7 @@
 				TargetAttributes = {
 					5A6A109120A19AA300FC342A = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					5A6A10A920A19AA400FC342A = {
 						CreatedOnToolsVersion = 9.2;
@@ -268,6 +273,7 @@
 				5A6A109A20A19AA300FC342A /* ViewController.m in Sources */,
 				5A6A10A520A19AA300FC342A /* main.m in Sources */,
 				5A6A109720A19AA300FC342A /* AppDelegate.m in Sources */,
+				5A6A10C920A19B1600FC342A /* DRTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7Y7NSKD85B;
 				INFOPLIST_FILE = DRTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxsy.DRTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bce21c69-4283-4fdd-9d1d-956beac3eb6f";
+				PROVISIONING_PROFILE_SPECIFIER = xxsy_developer;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DRTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxsy.DRTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
